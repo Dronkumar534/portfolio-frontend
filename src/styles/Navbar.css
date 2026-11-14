@@ -1,0 +1,86 @@
+.navbar {
+  display: flex;
+  list-style: none;
+
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  /* border: 1px solid white; */
+
+  padding: 0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+
+  /* backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: rgba(10, 10, 10, 0.7);*/
+  
+  background: rgba(10, 10, 15, 0.8); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.MyName {
+  padding-left: 40px;
+  color: white;
+  font-family: "Bahnschrift", "DIN Next LT Pro", "DIN Alternate", "ITC DIN Unit", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.navbar-list {
+  list-style: none;
+  /* border: 1px solid white; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  font-size: 10px;
+  padding-right: 40px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  color: #9ca3af;
+  margin-left: 25px;
+  text-decoration: none;
+  font-family: "Bahnschrift", "DIN Next LT Pro", "DIN Alternate", "ITC DIN Unit", sans-serif;
+  font-stretch: condensed;
+  font-weight: 300;
+
+  text-transform: uppercase;
+
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+/* .navbar a:hover::after {
+  width: 100%;
+} */
+
+.navbar a.active {
+  color: #ff3c3c;
+}

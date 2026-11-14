@@ -1,0 +1,459 @@
+
+/* =========================================
+   GLOBAL HERO
+========================================= */
+
+.hero-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 70px clamp(20px, 7vw, 100px) 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 45px;
+    color: #F5F5F5;
+    overflow: hidden;
+}
+
+/* =========================================
+   HERO TOP
+========================================= */
+
+.hero-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.hero-left {
+    flex: 1;
+    min-width: 0;
+    max-width: 700px;
+    
+}
+
+.tag {
+    color: #ff3c3c;
+    letter-spacing: 2px;
+    font-size: clamp(10px, 1.1vw, 13px);
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-family: "Bahnschrift", "DIN Next LT Pro",
+        "DIN Alternate", "ITC DIN Unit", sans-serif;
+}
+
+/* NAME */
+
+.name {
+    color: #E5E5E5;
+    font-size: clamp(42px, 6vw, 80px);
+    font-weight: 900;
+    line-height: 1.05;
+    overflow-wrap: anywhere;
+    font-family: Cambria, Cochin, Georgia,
+        Times, 'Times New Roman', serif;
+}
+
+.name span {
+    color: #444;
+}
+
+/* ROLE */
+
+.role {
+    margin-top: 22px;
+    color: #d4af37;
+    letter-spacing: 3px;
+    font-size: clamp(14px, 1.5vw, 18px);
+    line-height: 1.5;
+    font-family: "Bahnschrift", "DIN Next LT Pro",
+        "DIN Alternate", "ITC DIN Unit", sans-serif;
+}
+
+/* DESCRIPTION */
+
+.desc {
+    margin-top: 20px;
+    max-width: 580px;
+    color: #aaa;
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    
+}
+
+/* =========================================
+   RIGHT IMAGE
+========================================= */
+
+.hero-right {
+    flex: 0 1 400px;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box {
+    width: fit-content;
+    max-width: 100%;
+    padding: 15px;
+    position: relative;
+    border: 1px solid #ff3c3c;
+}
+
+.image-box img {
+    display: block;
+    width: clamp(200px, 28vw, 340px);
+    aspect-ratio: 1 / 1;
+    height: auto;
+    max-width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* =========================================
+   AVAILABILITY BADGE
+========================================= */
+
+.status-badge {
+    min-height: 30px;
+    width: max-content;
+    max-width: calc(100% - 10px);
+
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    padding: 6px 12px;
+
+    background: linear-gradient(
+        to bottom,
+        #1C1D25 0%,
+        #0a0a0f 50%,
+        #000000 100%
+    );
+
+    color: white;
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    white-space: nowrap;
+}
+
+.text {
+    color: #E6EAF0;
+}
+
+.dot {
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22C55E;
+
+    box-shadow:
+        0 0 6px #00ff88,
+        0 0 12px #00ff88,
+        0 0 20px #00ff88;
+}
+
+/* =========================================
+   BUTTON SECTION
+========================================= */
+
+.third-content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 25px;
+}
+
+.buttons {
+    /* margin-left: 125px; */
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+   
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .buttons {
+        margin-left: 40px;
+        gap: 15px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .third-content {
+        width: 100%;
+    }
+
+    .buttons {
+        margin-left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .Commision-Me,
+    .war-record {
+        width: 100%;
+        min-height: 46px;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+}
+
+/* COMMISSION BUTTON */
+
+.Commision-Me {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 35px;
+
+    background: #c0392b;
+    border: 1px solid #c0392b;
+    color: white;
+
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Commision-Me a{
+  text-decoration: none;
+  color: white;
+}
+
+.Commision-Me:hover {
+    background: transparent;
+    border-color: #c0392b;
+    color: white;
+}
+
+/* RESUME BUTTON */
+
+.war-record {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 35px;
+
+    background: transparent;
+    border: 1px solid #333;
+    color: #888;
+
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.war-record:hover {
+    border-color: #d4af37;
+    color: white;
+}
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media screen and (max-width: 900px) {
+
+    .hero-container {
+        padding: 60px 35px 40px;
+        gap: 35px;
+    }
+
+    .hero-top {
+        gap: 25px;
+    }
+
+    .hero-left {
+        max-width: 100%;
+    }
+
+    .hero-right {
+        flex: 0 1 300px;
+    }
+
+    .image-box img {
+        width: clamp(190px, 30vw, 270px);
+    }
+
+    .name {
+        font-size: clamp(38px, 5.5vw, 55px);
+    }
+
+    .desc {
+        font-size: 15px;
+    }
+
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media screen and (max-width: 600px) {
+
+    .hero-container {
+        min-height: auto;
+        padding: 45px 20px 45px;
+        gap: 35px;
+    }
+
+    /* Stack text and image */
+
+    .hero-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    /* Center text */
+
+    .hero-left {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .tag {
+        font-size: 10px;
+        letter-spacing: 1.3px;
+        margin-bottom: 18px;
+    }
+
+    .name {
+        font-size: clamp(35px, 10vw, 50px);
+        line-height: 1.15;
+        text-align: center;
+    }
+
+    .role {
+        font-size: 13px;
+        letter-spacing: 2px;
+        margin-top: 17px;
+    }
+
+    .desc {
+        font-size: 14px;
+        line-height: 1.8;
+        margin: 15px auto 0;
+        max-width: 450px;
+        text-align: center;
+    }
+
+    /* Profile image */
+
+    .hero-right {
+        width: 100%;
+        flex: none;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .image-box {
+        padding: 12px;
+    }
+
+    .image-box img {
+        width: clamp(180px, 65vw, 260px);
+    }
+
+    .status-badge {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+
+    /* Buttons */
+
+    .third-content {
+        width: 100%;
+        align-items: center;
+    }
+
+    .buttons {
+        width: 100%;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .Commision-Me,
+    .war-record {
+        padding: 13px 20px;
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media screen and (max-width: 380px) {
+
+    .hero-container {
+        padding: 35px 15px;
+    }
+
+    .tag {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .name {
+        font-size: 34px;
+    }
+
+    .role {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
+
+    .desc {
+        font-size: 13px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .Commision-Me,
+    .war-record {
+        width: 100%;
+        padding: 13px 15px;
+    }
+
+}

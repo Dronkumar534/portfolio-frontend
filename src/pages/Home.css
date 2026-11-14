@@ -1,0 +1,19 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #000707;
+  scroll-behavior: smooth;
+  cursor: default;
+  overflow-x: hidden;
+ 
+
+}
+
+.divider {
+  height: 1px;
+  width: 80%;
+  background: linear-gradient(to right, transparent, #888, transparent);
+  margin: 40px auto;
+  margin-top: 50px;
+}
