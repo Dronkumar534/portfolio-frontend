@@ -1,6 +1,6 @@
 import "../styles/Hero.css"
 import "../styles/Battlefield.css"
-import myImage from "../public/Dronkumar.jpeg";
+const myImage = "/Dronkumar.jpeg";
 // import mySecondImage from "../public/DronK.jpeg";
 const Hero = () => {
     return (
