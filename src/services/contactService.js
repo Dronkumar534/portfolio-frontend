@@ -7,15 +7,6 @@ const sendContactMessage = async (contactData) => {
         `${API_URL}/api/contact`,
         contactData
     );
-    // const response = await axios.post(
-    //     `${import.meta.env.VITE_API_URL}/api/contact`,
-    //     {
-    //         name,
-    //         email,
-    //         projectType,
-    //         message
-    //     }
-    // );
 
     return response.data;
 };
