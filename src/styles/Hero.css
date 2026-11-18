@@ -6,11 +6,16 @@
 .hero-container {
     width: 100%;
     min-height: 100vh;
+
+    box-sizing: border-box;
+
     padding: 70px clamp(20px, 7vw, 100px) 50px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 45px;
+
     color: #F5F5F5;
     overflow: hidden;
 }
@@ -289,7 +294,8 @@
 @media screen and (max-width: 900px) {
 
     .hero-container {
-        padding: 60px 35px 40px;
+        box-sizing: border-box;
+        padding: 95px 35px 40px;
         gap: 35px;
     }
 
@@ -316,7 +322,6 @@
     .desc {
         font-size: 15px;
     }
-
 }
 
 /* =========================================
@@ -326,20 +331,21 @@
 @media screen and (max-width: 600px) {
 
     .hero-container {
+        width: 100%;
         min-height: auto;
-        padding: 45px 20px 45px;
+
+        box-sizing: border-box;
+
+        padding: 100px 20px 45px;
+
         gap: 35px;
     }
-
-    /* Stack text and image */
 
     .hero-top {
         flex-direction: column;
         align-items: center;
         gap: 40px;
     }
-
-    /* Center text */
 
     .hero-left {
         width: 100%;
@@ -350,6 +356,7 @@
     .tag {
         font-size: 10px;
         letter-spacing: 1.3px;
+        line-height: 1.6;
         margin-bottom: 18px;
     }
 
@@ -373,8 +380,6 @@
         text-align: center;
     }
 
-    /* Profile image */
-
     .hero-right {
         width: 100%;
         flex: none;
@@ -395,8 +400,6 @@
         padding: 6px 10px;
     }
 
-    /* Buttons */
-
     .third-content {
         width: 100%;
         align-items: center;
@@ -414,7 +417,6 @@
         font-size: 11px;
         letter-spacing: 1px;
     }
-
 }
 
 /* =========================================
@@ -424,7 +426,7 @@
 @media screen and (max-width: 380px) {
 
     .hero-container {
-        padding: 35px 15px;
+        padding: 90px 15px 35px;
     }
 
     .tag {
@@ -455,5 +457,4 @@
         width: 100%;
         padding: 13px 15px;
     }
-
 }
