@@ -44,7 +44,7 @@ const Hero = () => {
                         <button className="Commision-Me">
                             <a href="#Deploy">COMMISSION ME</a>
                         </button>
-                        <a href="/DronkumarThakare1.pdf" download={"Resume.pdf"}>
+                        <a href="/Resume.pdf" download={"Resume.pdf"}>
                             <button className="war-record">
                                 WAR RECORD (CV)
                             </button>
